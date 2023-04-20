@@ -12,6 +12,7 @@ class ImageViewer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.purple[100],
         body: Center(
           child: Hero(
             tag: imageUrl,
@@ -21,14 +22,18 @@ class ImageViewer extends StatelessWidget {
             ),
           ),
         ),
-        bottomNavigationBar: ElevatedButton(
+        floatingActionButton: FloatingActionButton.extended(
+          backgroundColor: Color.fromARGB(255, 203, 163, 211),
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => HomePage()),
+              MaterialPageRoute(
+                builder: (context) => HomePage(),
+              ),
             );
           },
-          child: Text('Обратно'),
+          icon: const Icon(Icons.home),
+          label: const Text("Обратно"),
         ));
   }
 }

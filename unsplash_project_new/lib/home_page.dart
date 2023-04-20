@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple[100],
+      backgroundColor: Color.fromARGB(255, 203, 163, 211),
       body: FutureBuilder(
         future: getPhotos(),
         builder: (context, snapshot) {
