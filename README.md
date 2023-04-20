@@ -24,4 +24,7 @@
 
 <img src="https://user-images.githubusercontent.com/67687533/233353504-3fa53480-d3c1-4bc4-a4ca-4a09bb299e3b.png" alt="screenshot" width="40%" />
 
-
+Сделал фотографии одинаковыми по размеру и обернул их в рамки.<br>
+Сделал отступы, чтобы это выглядело красиво. <br>
+Так же добавил приятный, фиолетовый фон. 
+<img src="https://user-images.githubusercontent.com/67687533/233393490-263d84d9-f88c-44bc-8620-7ce97f28a91f.png" alt="screenshot" width="40" />
