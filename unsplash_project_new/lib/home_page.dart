@@ -27,6 +27,7 @@ class HomePage extends StatelessWidget {
       var photo = Galary(
         id: eachPhoto['user']['name'],
         smallImageUrl: eachPhoto['urls']['small'],
+        regularImageUrl: eachPhoto['urls']['regular'],
       );
       galary.add(photo);
     }
@@ -43,25 +44,41 @@ class HomePage extends StatelessWidget {
             return ListView.builder(
               itemCount: galary.length,
               itemBuilder: (context, index) {
-                return Container(
-                  padding: const EdgeInsets.only(left: 15),
-                  // decoration: BoxDecoration(
-                  //   color: Colors.purple[100],
-                  // ),
-                  child: ListTile(
-                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
-                    title: Text(galary[index].id,
+                return InkWell(
+                  //???/////
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        //???/////
+                        builder: (context) => ImageViewer(
+                            imageUrl: galary[index].regularImageUrl),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.only(left: 15),
+                    child: ListTile(
+                      contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                      title: Text(
+                        galary[index].id,
                         style: const TextStyle(
                           color: Colors.brown,
                           fontSize: 16,
-                        )),
-                    leading: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.network(
-                        galary[index].smallImageUrl,
-                        width: 100,
-                        height: 100,
-                        fit: BoxFit.cover,
+                        ),
+                      ),
+                      leading: Hero(
+                        ///???/////
+                        tag: galary[index].smallImageUrl,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: Image.network(
+                            galary[index].smallImageUrl,
+                            width: 100,
+                            height: 100,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
                       ),
                     ),
                   ),
@@ -74,6 +91,27 @@ class HomePage extends StatelessWidget {
             );
           }
         },
+      ),
+    );
+  }
+}
+
+class ImageViewer extends StatelessWidget {
+  final String imageUrl;
+
+  const ImageViewer({Key? key, required this.imageUrl}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Hero(
+          tag: imageUrl,
+          child: Image.network(
+            imageUrl,
+            fit: BoxFit.cover,
+          ),
+        ),
       ),
     );
   }
