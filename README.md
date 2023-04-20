@@ -27,4 +27,4 @@
 Сделал фотографии одинаковыми по размеру и обернул их в рамки.<br>
 Сделал отступы, чтобы это выглядело красиво. <br>
 Так же добавил приятный, фиолетовый фон. 
-<img src="https://user-images.githubusercontent.com/67687533/233393490-263d84d9-f88c-44bc-8620-7ce97f28a91f.png" alt="screenshot" width="40" />
+<img src="https://user-images.githubusercontent.com/67687533/233393490-263d84d9-f88c-44bc-8620-7ce97f28a91f.png" alt="screenshot" width="40%" />
