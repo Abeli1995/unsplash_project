@@ -9,16 +9,11 @@
   У меня получилось вывести подписи к изображениям и сделать список, пускай и с одинаковыми фотографиями. 
   Сейчас я пытаюсь вместо id вывести имена авторов, и вместо одной повторяющейся фотографии, добавить разные. 
   Далее я буду работать над функционалом при нажатии. 
-  <table>
- <tr>
-  <td>
-   <img src="https://user-images.githubusercontent.com/67687533/232718012-4aca25e3-5c3a-477e-ad63-35d694f4e0a4.png" alt="screenshot" width="10%" height="40%">
-  </td>
- </tr>
- <td>
-<img src="https://user-images.githubusercontent.com/67687533/232718090-6123a4c9-c499-41c9-898f-81b38ab0bbc6.png" alt="screenshot" width="10%" height="50%">
- </td>
- </table>
+  
+   <img src="https://user-images.githubusercontent.com/67687533/232718012-4aca25e3-5c3a-477e-ad63-35d694f4e0a4.png" alt="screenshot" width="10%" height="40%" style="display: inline-block;">
+  
+<img src="https://user-images.githubusercontent.com/67687533/232718090-6123a4c9-c499-41c9-898f-81b38ab0bbc6.png" alt="screenshot" width="10%" height="50%" style="display: inline-block;">
+ 
 
 Получилось вывести фотографии и имена их авторов. 
 Оказалось, что проблема в неправильном вызове параметров api: 
