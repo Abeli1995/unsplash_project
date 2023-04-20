@@ -7,4 +7,6 @@
 
 ![Screenshot_1681806185](https://user-images.githubusercontent.com/67687533/232718090-6123a4c9-c499-41c9-898f-81b38ab0bbc6.png)
 
+Получилось вывести фотографии и имена их авторов. Оказалось, что проблема в неправильном вызове параметров api: я вызывал links, а нужно было вызывать ['urls']['small'], а имена были здесь: ['user']['name']
 
+![Screenshot_1681990105](https://user-images.githubusercontent.com/67687533/233353504-3fa53480-d3c1-4bc4-a4ca-4a09bb299e3b.png)
