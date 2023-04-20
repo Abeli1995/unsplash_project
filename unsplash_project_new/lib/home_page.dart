@@ -10,18 +10,23 @@ class HomePage extends StatelessWidget {
 
   Future getPhotos() async {
     var response = await http.get(
-      Uri.https('api.unsplash.com', '/photos', {
-        'client_id':
-            'ab3411e4ac868c2646c0ed488dfd919ef612b04c264f3374c97fff98ed253dc9'
-      }),
+      Uri.https(
+        'api.unsplash.com',
+        '/photos',
+        {
+          'client_id':
+              '896d4f52c589547b2134bd75ed48742db637fa51810b49b607e37e46ab2c0043'
+        },
+      ),
     );
+
     var data = jsonDecode(response.body);
 
     for (var eachPhoto in data) {
+      print(eachPhoto['links']['self']);
       var photo = Galary(
-        id: eachPhoto['id'],
-        description: eachPhoto['alt_description'],
-        smallImageUrl: eachPhoto['color'],
+        id: eachPhoto['user']['name'],
+        smallImageUrl: eachPhoto['urls']['small'],
       );
       galary.add(photo);
     }
@@ -29,7 +34,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    getPhotos();
     return Scaffold(
       body: FutureBuilder(
         future: getPhotos(),
@@ -44,8 +48,7 @@ class HomePage extends StatelessWidget {
                   ),
                   child: ListTile(
                     title: Text(galary[index].id),
-                    subtitle: Text(galary[index].description),
-                    leading: Image.network('https://picsum.photos/250?image=9'),
+                    leading: Image.network(galary[index].smallImageUrl),
                   ),
                 );
               },
