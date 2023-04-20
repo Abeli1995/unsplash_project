@@ -39,7 +39,7 @@
 Внес все изменения: сделал всё в одном стиле, оформил кнопку, ведущую на стартовую страницу. 
 
 
-<img src="https://user-images.githubusercontent.com/67687533/233449372-47dfd199-1b48-4a2d-b777-4f584d2523bc.png" alt="screenshot" widht="40%">
+<img src="https://user-images.githubusercontent.com/67687533/233449372-47dfd199-1b48-4a2d-b777-4f584d2523bc.png" alt="screenshot" width="40%">
 
 <img src="https://user-images.githubusercontent.com/67687533/233449420-a0af96e7-53c6-4223-93ed-056226c07153.png" alt="screenshot" width="40%">
 
