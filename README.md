@@ -4,7 +4,7 @@
 Задача: сделать галерею с фотографиями и авторами в виде списка. При нажатии фотография увеличивается. Фотографии нужно добавлять с помощью API
  
   <div style="flex: 1;">
-   <img src="https://user-images.githubusercontent.com/67687533/232718012-4aca25e3-5c3a-477e-ad63-35d694f4e0a4.png" alt="screenshot" width="50%" />
+   <img src="https://user-images.githubusercontent.com/67687533/232718012-4aca25e3-5c3a-477e-ad63-35d694f4e0a4.png" alt="screenshot" width="20%" />
   </div>
  
  <div style="flex: 1;">
