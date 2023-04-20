@@ -35,6 +35,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.purple[100],
       body: FutureBuilder(
         future: getPhotos(),
         builder: (context, snapshot) {
@@ -43,12 +44,26 @@ class HomePage extends StatelessWidget {
               itemCount: galary.length,
               itemBuilder: (context, index) {
                 return Container(
-                  decoration: BoxDecoration(
-                    color: Colors.green[100],
-                  ),
+                  padding: const EdgeInsets.only(left: 15),
+                  // decoration: BoxDecoration(
+                  //   color: Colors.purple[100],
+                  // ),
                   child: ListTile(
-                    title: Text(galary[index].id),
-                    leading: Image.network(galary[index].smallImageUrl),
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    title: Text(galary[index].id,
+                        style: const TextStyle(
+                          color: Colors.brown,
+                          fontSize: 16,
+                        )),
+                    leading: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.network(
+                        galary[index].smallImageUrl,
+                        width: 100,
+                        height: 100,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ),
                 );
               },
