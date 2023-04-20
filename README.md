@@ -10,10 +10,10 @@
   Сейчас я пытаюсь вместо id вывести имена авторов, и вместо одной повторяющейся фотографии, добавить разные. <br>
   Далее я буду работать над функционалом при нажатии. 
   
-   <img src="https://user-images.githubusercontent.com/67687533/232718012-4aca25e3-5c3a-477e-ad63-35d694f4e0a4.png" alt="screenshot" width="20%" height="70%" />
+   <img src="https://user-images.githubusercontent.com/67687533/232718012-4aca25e3-5c3a-477e-ad63-35d694f4e0a4.png" alt="screenshot" width="40%" height="50%" />
   
 
-<img src="https://user-images.githubusercontent.com/67687533/232718090-6123a4c9-c499-41c9-898f-81b38ab0bbc6.png" alt="screenshot" width="20%" />
+<img src="https://user-images.githubusercontent.com/67687533/232718090-6123a4c9-c499-41c9-898f-81b38ab0bbc6.png" alt="screenshot" width="40%" height="50%"/>
 
 Получилось вывести фотографии и имена их авторов. <br>
 Оказалось, что проблема в неправильном вызове параметров api: <br>
@@ -22,9 +22,9 @@
 Далее мне нужно сделать фотографии одинаковыми по величине и реализовать функционал: <br>
 увеличение фотографии при нажатии. 
 
-<img src="https://user-images.githubusercontent.com/67687533/233353504-3fa53480-d3c1-4bc4-a4ca-4a09bb299e3b.png" alt="screenshot" width="20%" />
+<img src="https://user-images.githubusercontent.com/67687533/233353504-3fa53480-d3c1-4bc4-a4ca-4a09bb299e3b.png" alt="screenshot" width="40%" height="50%" />
 
 Сделал фотографии одинаковыми по размеру и обернул их в рамки.<br>
 Сделал отступы, чтобы это выглядело красиво. <br>
 Так же добавил приятный, фиолетовый фон. 
-<img src="https://user-images.githubusercontent.com/67687533/233393490-263d84d9-f88c-44bc-8620-7ce97f28a91f.png" alt="screenshot" width="20%" />
+<img src="https://user-images.githubusercontent.com/67687533/233393490-263d84d9-f88c-44bc-8620-7ce97f28a91f.png" alt="screenshot" width="40%" height="50%" />
