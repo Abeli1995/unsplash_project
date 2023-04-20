@@ -30,7 +30,7 @@
 <img src="https://user-images.githubusercontent.com/67687533/233393490-263d84d9-f88c-44bc-8620-7ce97f28a91f.png" alt="screenshot" width="10%" height="50%">
 
 Сделал функционал перехода по нажатию на кнопку. Осталось сделать кнопку, ведущую обратно на страницу. Дополнительно можно добавить фон изображения другой страницы с полным изображением. 
-<img src="https://user-images.githubusercontent.com/67687533/233429187-d3fd57f2-4bc4-4cfb-9e91-19e72124fdc7.png" alt="screenshot" widht="10%">
+<img src="https://user-images.githubusercontent.com/67687533/233429187-d3fd57f2-4bc4-4cfb-9e91-19e72124fdc7.png" alt="screenshot" width="10%">
 
 
 
