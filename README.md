@@ -44,4 +44,5 @@
 <img src="https://user-images.githubusercontent.com/67687533/233449420-a0af96e7-53c6-4223-93ed-056226c07153.png" alt="screenshot" width="40%">
 
 
+This project is written in Dart.
 
